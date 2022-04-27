@@ -24,7 +24,7 @@
     "react-styleguidist": "^11.2.0"
   },
   "dependencies": {
-    "@babel/core": "^7.16.0",
+    "@babel/core": "^7.17.9",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@styled-icons/bootstrap": "^10.34.0",
     "@svgr/webpack": "^5.5.0",
@@ -32,7 +32,7 @@
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.1",
-    "babel-jest": "^27.4.2",
+    "babel-jest": "^28.0.2",
     "babel-loader": "^8.2.3",
     "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-named-asset-import": "^0.3.8",
@@ -120,7 +120,7 @@
     ],
     "testEnvironment": "jsdom",
     "transform": {
-      "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "<rootDir>/config/jest/babelTransform.js",
+      "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "babel-jest",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
       "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
